@@ -15,10 +15,21 @@
 
 ---
 
-## Installation de la base de données
+## Installation de la base de données (phpMyAdmin)
 
-1. Ouvrir **phpMyAdmin**
-2. Créer une base de données :
+### 1) Démarrer XAMPP
+1. Ouvrir **XAMPP Control Panel**
+2. Cliquer sur **Start** pour :
+   - ✅ **Apache**
+   - ✅ **MySQL**
+
+Ensuite, ouvrir phpMyAdmin :
+- http://localhost/phpmyadmin
+
+---
+
+### 2) Créer la base de données
+Créer une base nommée :
 
 ```sql
 CREATE DATABASE lams_barber CHARACTER SET utf8mb4;
