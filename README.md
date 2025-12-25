@@ -57,7 +57,8 @@ CREATE TABLE users (
 ```sql
 CREATE TABLE categories (
     id INT PRIMARY KEY AUTO_INCREMENT,
-    name VARCHAR(100)
+    name VARCHAR(100),
+    slug VARCHAR(100)
 );
 ```
 
@@ -84,6 +85,8 @@ CREATE TABLE carts (
     user_id INT,
     product_id INT,
     quantity INT
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+
 );
 ```
 
@@ -106,8 +109,8 @@ CREATE TABLE order_items (
     id INT PRIMARY KEY AUTO_INCREMENT,
     order_id INT,
     product_id INT,
-    unit_price DECIMAL(10,2),
-    quantity INT
+    quantity INT,
+    unit_price DECIMAL(10,2)
 );
 ```
 
